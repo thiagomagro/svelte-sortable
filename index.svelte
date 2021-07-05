@@ -173,7 +173,7 @@
 </script>
 
 <div bind:this={targetEl} {id}>
-    {#each items as item}
-        <slot {item} />
+    {#each items as item,index}
+        <slot {item} {index}/>
     {/each}
 </div>
